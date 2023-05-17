@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+:root {
+  /*
+! Use transparency to get the color variations necessary to match the design. Hint: look into using `hsla()`.  */
+
+  /* Colors for Summary */
+  --lightRed: rgb(255, 87, 87);
+  --orangeyYellow: rgb(255, 176, 31);
+  --greenTeal: rgb(0, 189, 145);
+  --cobaltBlue: rgb(17, 37, 212);
+
+  /* backGround Gradient */
+  --lightSlateBlue: #3137b1;
+  --lightRoyalBlue: #2523a5;
+
+  /* Circle */
+  --violetBlue: hsla(256, 72%, 46%, 1);
+  --persianBlue: hsla(241, 72%, 46%, 0.2);
+}
+
+*,
+html,
+::after,
+::before {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.container {
+  margin: 20px auto;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 40px);
+}
+
+.above {
+  height: 45%;
+  width: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 0 0 25px 25px;
+  text-align: center;
+  padding: 20px 20px;
+  color :white;
+  background-image:linear-gradient(to bottom,var(--lightSlateBlue),var(--lightRoyalBlue)) ;
+}
+
+.circle {
+  width: 120px;
+  height: 130px;
+  margin: 9px 0px;
+  padding: 12px;
+  border-radius: 50%;
+  background-image: linear-gradient(to top ,var(--lightSlateBlue),var(--lightRoyalBlue)) ;
+
+}
+
+.below {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  align-content: space-evenly;
+}
+
+.summary {
+  width: calc(100% - 30px);
+  border: 1px solid var(--persianBlue);
+  font-weight: 700;
+  /* padding: 9px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.summary > p {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  text-indent: 5px;
+}
+
+#text {
+  margin: 10px auto 15px 10px;
+  color: rgba(23, 23, 70,0.9);
+  font-weight: 700;
+
+
+}
+h1 {
+  font-size:49px;
+  margin: 2px;
+}
+.circle > p {
+  margin: 0px;
+color :rgba(255,255,255,0.6)  
+
+
+}
+
+h4,
+.above > p {
+  margin: 2px;
+}
+.above > p {
+color :rgba(255,255,255,0.6)  
+}
+
+.s1 {
+  color: var(--lightRed);
+}
+
+.s2{
+  color: var(--orangeyYellow);
+}
+
+.s3 {
+  color: var(--greenTeal);
+  
+}
+
+.s4 {
+  color: var(--cobaltBlue);
+}
+
+.button {
+  color: aliceblue;
+  width: calc(100% - 30px);
+  text-align: center;
+  padding: 12px;
+  border-radius: 25px;
+  background-color:rgba(23, 23, 70,0.9);
+}
+.no {
+  color: rgba(23, 23, 70,0.9);
+}
+
+
+.reaction {
+  background-color: rgba(255,87,87,0.1);
+
+}
+
+.memory {
+  background-color:rgba(255,176,31,0.1) ;
+}
+
+.verbal {
+  background-color: rgba(0,189,145,0.1);
+}
+
+.visual {
+  background-color: rgba(17,37,212,0.1);
+}
+
+.no > span {
+  color :rgba(0,0,0,0.5)
+}
+
+@media only screen and (min-width: 768px)
+{
+  .container {
+    display: flex;
+    width: 600px;
+    align-items: center;
+    
+    
+
+  }
+  .above,.below{
+    border-radius: 15px;
+    height: 60%;
+  }
+
+}
